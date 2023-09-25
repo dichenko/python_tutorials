@@ -4,7 +4,7 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
 # Вместо BOT TOKEN HERE нужно вставить токен вашего бота,
 # полученный у @BotFather
-BOT_TOKEN = '5903893229:AAE-PYJDsy4CbQ7xATpH48AkpjrGkQ40Lis'
+BOT_TOKEN = '5903893229:AAE-PYJDjj4CbQ7xATpHAkpjrGkQ490Lis'
 
 # Создаем объекты бота и диспетчера
 bot = Bot(BOT_TOKEN)
