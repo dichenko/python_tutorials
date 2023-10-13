@@ -8,7 +8,7 @@ import requests
 import json
 
 API_URL = "https://api.nasa.gov/EPIC/api/natural/images?api_key=" # Сообщает информацию о последних фото земли
-API_KEY = "Jh61EnWB52zymVUElf6pIcx96XXFGfnxtKTypf4p" # Модифицировать
+API_KEY = "Jdih61EnWB52zymVUElf6pIcx96XXFGfnxtKTypf4p" # Модифицировать
 FULL_URL = API_URL+API_KEY
 response = requests.get(FULL_URL)
 print(response.text)
