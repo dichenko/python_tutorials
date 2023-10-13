@@ -1,3 +1,10 @@
+#Todo
+# Приветствовать пользователя по имени. Имя хранится в сообщении (message.from_user.full_name)
+# Добавить проверку, что ввели именно число
+# Добавить проверку, чтобы не вводили слишком большие числа
+# Добавить счетчик: сколько раз бот посчитал степень двойки
+
+
 from aiogram import Bot, Dispatcher, F
 from aiogram.types import Message
 
@@ -17,7 +24,7 @@ async def start_command(message: Message):
     await message.answer("Напиши любое целое число")
 
 
-# Когда пользователь что-то ввел число, возвращаем ему результат
+# Когда пользователь что-то ввел , возвращаем ему результат
 @dp.message(F.text)
 async def click(message: Message):
     text = message.text
@@ -30,8 +37,4 @@ async def click(message: Message):
 if __name__ == '__main__':
     dp.run_polling(bot)
 
-#Todo
-# Приветствовать пользователя по имени. Имя хранится в сообщении (message.from_user.full_name)
-# Добавить проверку, что ввели именно число
-# Добавить проверку, чтобы не вводили слишком большие числа
-# Добавить счетчик: сколько раз бот посчитал степень двойки
+
