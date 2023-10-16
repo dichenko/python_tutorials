@@ -1,3 +1,10 @@
+#Todo
+#Добавить кнопку СБРОС по которому у пользователя сбросится счетчик
+#Добавить кнопку статистика, чтобы видеть, сколько игроков в боте
+#Добавить количество кликов у лидера
+#Добавить лидерборд: топ-3 игрока с лучшими результатами
+#Сохранять данные игроков в файл, чтобы они не терялись после перезапуска
+
 from aiogram import Bot, Dispatcher, F
 from aiogram.types import Message
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
@@ -26,10 +33,11 @@ keyboard = ReplyKeyboardMarkup(
 async def start_command(message: Message):
     await message.answer(
         'Это кликер. Кликай!', reply_markup=keyboard)
-    # Если пользователь только запустил бота и его нет в словаре
+
+    if 1:
+        pass # Если пользователь только запустил бота и его нет в словаре
     # users - добавляем его в словарь
-    if message.from_user.id not in users:
-        users[message.from_user.id] = 0
+    # message.from_user.id
 
     else:
         await message.answer(f'Ты накликал {users[message.from_user.id]} раз')
@@ -46,9 +54,4 @@ async def click(message: Message):
 if __name__ == '__main__':
     dp.run_polling(bot)
 
-#Todo
-#Добавить кнопку СБРОС по которому у пользователя сбросится счетчик
-#Добавить кнопку статистика, чтобы видеть, сколько игроков в боте
-#Добавить количество кликов у лидера
-#Добавить лидерборд: топ-3 игрока с лучшими результатами
-#Сохранять данные игроков в файл, чтобы они не терялись после перезапуска
+

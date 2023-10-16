@@ -8,9 +8,8 @@
 from aiogram import Bot, Dispatcher, F
 from aiogram.types import Message
 
-# Вместо BOT TOKEN HERE нужно вставить токен вашего бота,
-# полученный у @BotFather
-BOT_TOKEN = '5903893229:AAE-PYy4CbQ79999485Akpj9GkQ40Lis'
+
+BOT_TOKEN = '5903893229:AAE-PYy4CbQ79999485Akpj9GkQ40Lis' #Нужен токен твоего бота, иди к https://t.me/BotFather
 
 # Создаем объекты бота и диспетчера
 bot = Bot(BOT_TOKEN)
@@ -24,7 +23,7 @@ async def start_command(message: Message):
     await message.answer("Напиши любое целое число")
 
 
-# Когда пользователь что-то ввел , возвращаем ему результат
+# Когда пользователь что-то ввел , возводим в квадрат и возвращаем результат
 @dp.message(F.text)
 async def click(message: Message):
     text = message.text
