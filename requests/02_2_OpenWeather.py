@@ -14,7 +14,7 @@ def get_weather(api_key, city):
         print("Error in the HTTP request")
 
 
-api_key = "9156c1abecc96917e1e7291bab96b364"
+api_key = "9156c_abecc96917e1e7291bab96b3_4"
 city = "Moscow"
 
 get_weather(api_key, city)
