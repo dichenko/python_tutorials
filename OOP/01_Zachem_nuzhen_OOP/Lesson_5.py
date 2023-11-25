@@ -22,7 +22,6 @@ WIDTH, HEIGHT = 800, 600
 # И создадим картинку на экране - screen
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 
-
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)
 BLUE = (0, 0, 255)
@@ -48,8 +47,8 @@ while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
-        elif pygame.event == pygame.MOUSEBUTTONDOWN: # Если пользователь кликнул мышкой по экрану
-            pass # Нужно создать новый мячик и добавить его в массив к остальным мячикам
+        elif pygame.event == pygame.MOUSEBUTTONDOWN:  # Если пользователь кликнул мышкой по экрану
+            pass  # Нужно создать новый мячик и добавить его в массив к остальным мячикам
 
     # Заливаем фон белым цветом
     screen.fill(WHITE)
@@ -66,7 +65,7 @@ while True:
         if ball["y"] > HEIGHT or ball["y"] < 0:
             ball["speed"][1] = -ball["speed"][1]
 
-    # Рисуем кругb с нужными характеристиками
+    # Рисуем круги с нужными характеристиками
     for ball in balls:
         pygame.draw.circle(screen, ball["color"], [ball['x'], ball["y"]], ball['r'])
 

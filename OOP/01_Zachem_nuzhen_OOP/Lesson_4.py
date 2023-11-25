@@ -9,13 +9,13 @@
 # Импортируем библиотеку Pygame
 import pygame
 
-#Используем магическую команду
+# Используем магическую команду
 pygame.init()
 
-#Задаем две константы - размеры окна с игрой
+# Задаем две константы - размеры окна с игрой
 WIDTH, HEIGHT = 800, 600
 
-#И создадим картинку на экране - screen
+# И создадим картинку на экране - screen
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 
 # Мяч будет красным, а экран - белым. Создадим две константы,
@@ -51,7 +51,5 @@ while True:
     # Рисуем круг с нужными характеристиками
     pygame.draw.circle(screen, ball_color, [ball_x, ball_y], ball_r)
 
-    pygame.display.flip() # Магическая команда
-    pygame.time.delay(10) # Магическая команда
-
-
+    pygame.display.flip()  # Магическая команда
+    pygame.time.delay(10)  # Магическая команда

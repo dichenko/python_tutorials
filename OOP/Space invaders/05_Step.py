@@ -128,7 +128,6 @@ def game():
                         cnt += 1
                     rockets.pop(rocket_heatboxes.index(ro))
 
-
     def drow_explosions():
         for explo in explosions_list:
             img = explo.get_image()
@@ -228,6 +227,7 @@ def final():
         pygame.time.delay(10)  # Задержка, влияет на плавность анимации. Чем больше, тем хуже анимация
 
 
-menu()
-game()
-final()
+while True:
+    menu()
+    game()
+    final()
