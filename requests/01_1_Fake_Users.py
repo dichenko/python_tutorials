@@ -13,6 +13,7 @@ response = requests.get(url)
 if response.status_code == 200:
     data = response.json()
     print("Список пользователей:", data)
+
 else:
     print("Ошибка при выполнении запроса. Код состояния:", response.status_code)
 
