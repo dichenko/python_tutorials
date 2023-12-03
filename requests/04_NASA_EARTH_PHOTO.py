@@ -1,14 +1,15 @@
 
-"""1 Создать папку IMG и сохранить в нее все посление  фото
-2 посмотреть список дат, на которые доступны фото земли https://api.nasa.gov/EPIC/api/natural/all?api_key=DEMO_KEY
-Загрузить первую фотографию за каждый год. Файл фотографии доллжен содержать в названии дату, когда онс аделана
+"""
+1)Создать папку IMG и сохранить в нее все посление  фото
+2) посмотреть список дат, на которые доступны фото земли https://api.nasa.gov/EPIC/api/natural/all?api_key=DEMO_KEY
+Загрузить первую фотографию за каждый год. Файл фотографии доллжен содержать в названии дату, когда она сделана
 """
 
 import requests
 import json
 
 API_URL = "https://api.nasa.gov/EPIC/api/natural/images?api_key=" # Сообщает информацию о последних фото земли
-API_KEY = "Jdih61EnWB52zymVUElf6pIcx96XXFGfnxtKTypf4p" # Модифицировать
+API_KEY = "Jh61EnWB52zymVUElf6pIcx96Gf___nxtKTypf4p" # Модифицировать
 FULL_URL = API_URL+API_KEY
 response = requests.get(FULL_URL)
 print(response.text)
