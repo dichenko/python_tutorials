@@ -47,13 +47,13 @@ while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
-        elif pygame.event == pygame.MOUSEBUTTONDOWN:  # Если пользователь кликнул мышкой по экрану
+        elif event.type == pygame.MOUSEBUTTONDOWN:  # Если пользователь кликнул мышкой по экрану
             pass  # Нужно создать новый мячик и добавить его в массив к остальным мячикам
 
     # Заливаем фон белым цветом
     screen.fill(WHITE)
 
-    # Обновим координаты мячей
+    # Обновим координаты мячейп
     for ball in balls:
         ball["x"] += ball["speed"][0]
         ball["y"] += ball["speed"][1]
